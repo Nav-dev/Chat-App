@@ -1,20 +1,18 @@
-import firebase from "firebase/app";
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/database';
 
 const config = {
+  apiKey: 'AIzaSyCbrxAgnXSNNoHaN7jeFr_aCruDs_Gby7Y',
+  authDomain: 'chatnowapp-86d5e.firebaseapp.com',
+  projectId: 'chatnowapp-86d5e',
+  storageBucket: 'chatnowapp-86d5e.appspot.com',
+  messagingSenderId: '1051947183435',
+  appId: '1:1051947183435:web:d91498271eb15283f80cce',
+};
 
-    apiKey: "AIzaSyCM362ByvqskrTRUqsysrY6oGNMz0MllQs",
-  
-    authDomain: "chat-app-3b8d2.firebaseapp.com",
-  
-    projectId: "chat-app-3b8d2",
-  
-    storageBucket: "chat-app-3b8d2.appspot.com",
-  
-    messagingSenderId: "256021056248",
-  
-    appId: "1:256021056248:web:14fc303b2b6dbbfedc090d"
-  
-  };
+// Initialize Firebase
 
 const app = firebase.initializeApp(config);
-  
+export const auth = app.auth();
+export const database = app.database();
