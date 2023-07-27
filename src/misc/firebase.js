@@ -6,6 +6,7 @@ import 'firebase/storage';
 const config = {
   apiKey: 'AIzaSyCbrxAgnXSNNoHaN7jeFr_aCruDs_Gby7Y',
   authDomain: 'chatnowapp-86d5e.firebaseapp.com',
+  databaseURL: 'https://chatnowapp-86d5e-default-rtdb.asia-southeast1.firebasedatabase.app',
   projectId: 'chatnowapp-86d5e',
   storageBucket: 'chatnowapp-86d5e.appspot.com',
   messagingSenderId: '1051947183435',
