@@ -12,7 +12,8 @@
     "react-scripts": "5.0.1",
     "rsuite": "^4.10.2",
     "sass": "^1.63.6",
-    "timeago-react": "^3.0.6"
+    "timeago-react": "^3.0.6",
+    "use-context-selector": "^1.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
