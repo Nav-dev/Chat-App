@@ -78,7 +78,7 @@ const Bottom = () => {
     />
 
     <InputGroup.Button 
-     color="blue"
+     color="yellow"
      appearance='primary' 
      onClick={onSendClick}
      disabled={isLoading}
