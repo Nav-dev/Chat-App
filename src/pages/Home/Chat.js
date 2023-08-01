@@ -3,10 +3,11 @@ import React from 'react';
 import ChatTop from '../../components/chat-window/top';
 import ChatBottom from '../../components/chat-window/bottom';
 import Messages from '../../components/chat-window/messages';
-import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
+
 import { useRooms } from '../../context/rooms.context';
 import { Loader } from 'rsuite';
 import { CurrentRoomProvider } from '../../context/current-room.context';
+import { useParams } from 'react-router';
 
 const Chat = () => {
     const { chatId } = useParams();

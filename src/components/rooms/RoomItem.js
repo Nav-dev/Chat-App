@@ -10,7 +10,9 @@ const RoomItem = ({ room }) => {
     <div className='d-flex justify-content-between align-items-center'>
         <h3 className='text-dissapear'>{name}</h3>
         <TimeAgo 
-            datetime={lastMessage ? new Date(lastMessage.createdAt): new Date(createdAt)}
+            datetime={
+              lastMessage ? new Date(lastMessage.createdAt): new Date(createdAt)
+            }
             className='font-normal text-black-45' 
             />
     </div>
@@ -20,8 +22,8 @@ const RoomItem = ({ room }) => {
         <>
         <div className='d-flex align-items-center'>
           <ProfileAvatar 
-          src={lastMessage.author.avatar.avatar} 
-          name={lastMessage.author.name} 
+          src={lastMessage.author?.avatar?.avatar} 
+          name={lastMessage.author?.name} 
           size="sm"
           />
         </div>

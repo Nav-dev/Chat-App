@@ -39,6 +39,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react": "^18.2.18",
     "eslint": "^8.27.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-react": "^7.32.2",
