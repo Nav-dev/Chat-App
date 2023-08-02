@@ -7,6 +7,7 @@ import { useCurrentRoom} from '../../../context/current-room.context';
 import { Button } from 'rsuite';
 import { auth } from '../../../misc/firebase';
 import { useHover } from '../../../misc/custom-hook';
+import IconBtnControl from './IconBtnControl';
 
 const MessageItem = ({message, handleAdmin }) => {
     const {author, createdAt, text }= message;
@@ -51,6 +52,16 @@ const MessageItem = ({message, handleAdmin }) => {
                 createdAt
             }
             className='font-normal text-black-45 ml-2' 
+            />
+
+            <IconBtnControl
+            // eslint-disable-next-line no-constant-condition
+            {...(true ? {color: 'red'}: {})}
+              isVisible
+              iconName="heart"
+              toottip="Like this message"
+              onClick={() => {}}
+              bageContent={5}            
             />
     </div>
 
