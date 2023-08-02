@@ -1,4 +1,4 @@
-import { useCallback, useState, useEffect } from "react"
+import { useCallback, useState, useEffect, useRef } from "react"
 import { database } from "./firebase";
 
 export function useModalState(defaultValue =false) {
@@ -50,5 +50,33 @@ export const useMediaQuery = query => {
   },[uid]);
 
   return presence;
+  }
+
+  export function useHover() {
+    const [value, setValue] = useState(false);
+
+    const ref = useRef(null);
+
+    const handleMouseOver = ()  => setValue(true);
+    const handleMouseOut  = () => setValue(false);
+
+    useEffect(
+      () =>{
+        const node = ref.current;
+        if(node) {
+          node.addEventListener('mouseover' , handleMouseOver);
+          node.addEventListener('mouseout' , handleMouseOut);
+        }
+
+        return () => {
+          node.removeEventListener('mouseover', handleMouseOver);
+          node.removeEventListener('mouseout', handleMouseOut);          
+        };
+      },
+      
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      [ref.current]
+    );
+    return [ref,value];
   }
   
