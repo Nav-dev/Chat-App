@@ -1,10 +1,11 @@
 import React, { memo } from 'react'
 import { Alert, Button, Drawer } from 'rsuite'
 import { useMediaQuery, useModalState } from '../../../misc/custom-hook'
-import EditableInput from '../../EditableInput';
+
 import { useCurrentRoom } from '../../../context/current-room.context';
 import { database } from '../../../misc/firebase';
 import { useParams } from 'react-router';
+import EditableInput from '../../EditableInput';
 
 const EditRoomBtnDrawer = () => {
     const {isOpen, open, close} = useModalState();
