@@ -15,6 +15,7 @@ function assembleMessage(profile, chatId){
             avatar:(profile.avatar ? {avatar:profile.avatar } : {})
         },
         createdAt: firebase.database.ServerValue.TIMESTAMP,
+        likeCount: 0,
     };
 }
 
