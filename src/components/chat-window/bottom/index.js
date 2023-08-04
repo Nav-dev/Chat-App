@@ -5,6 +5,7 @@ import { useProfile } from '../../../context/profile.context';
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import { database } from '../../../misc/firebase';
 import AttachmentBtnModal from './AttachmentBtnModal';
+import AudioMsgBtn from './AudioMsgBtn';
 
 function assembleMessage(profile, chatId){
     return{
@@ -104,6 +105,7 @@ const Bottom = () => {
   <div>
     <InputGroup>
     <AttachmentBtnModal afterUpload={afterUpload}/>
+    <AudioMsgBtn afterUpload={afterUpload} />
     <Input 
     placeholder="Write a new appearence here..." 
     value={input} 
