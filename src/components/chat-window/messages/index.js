@@ -94,6 +94,7 @@ const Messages = () => {
       updates[`/rooms/${chatId}/lastMessage`] = {
         ...messages[messages.length-2],
         msgId: messages[messages.length-2].id
+      
       }
     }
 

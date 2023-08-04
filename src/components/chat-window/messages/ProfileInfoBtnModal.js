@@ -24,7 +24,7 @@ const ProfileInfoBtnModal = ({ profile, children, ...btnProps }) => {
             <Modal.Body className='text-center'>
 
             <ProfileAvatar 
-                src={avatar?.avatar}
+                src={avatar}
                 name={name}
                 className="width-200 height-200 img-fullsize font-huge"
             />
