@@ -32,7 +32,7 @@ const SignIn = () => {
             <Panel>
               <div className="text-center">
                 <h2>Welcome to Chatnow</h2>
-                <p>Progressive chat platform for neophytes.</p>
+                <p>Progressive chat platform for neophytes. <span className='color:red'>created by NAV</span></p>
               </div>
               <div className="mt-3">
                 <Button block color="green" onClick={onGoogleSignIn}>
