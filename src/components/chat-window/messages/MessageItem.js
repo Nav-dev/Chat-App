@@ -52,7 +52,7 @@ const MessageItem = ({message, handleAdmin, handleLike, handleDelete }) => {
 
     <PresenceDot uid={author.uid} />
         <ProfileAvatar 
-        src={author.avatar.avatar} 
+        src={author?.avatar?.avatar} 
         name={author.name} 
         className="ml=1"
         size="xs" 
